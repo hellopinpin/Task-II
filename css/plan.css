@@ -1,0 +1,571 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------------------------*/
+/* font-family: 'Noto Sans TC', sans-serif;  */
+
+*,*::before,*::after{
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Noto Sans TC", sans-serif;
+	color: #221e1f;
+	font-size: 16px;
+	line-height: 24px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.pa-lr{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.pa-lr
+
+.mb32{
+	margin-bottom: 32px;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.fz-l {
+	font-size: 32px;
+	line-height: 46px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 48px;
+}
+
+.fz-m {
+	font-size: 24px;
+	line-height: 35px;
+	font-weight: 600;
+	text-align: center;
+	
+}
+
+.fz-s {
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.number, .number_p, .number_mb, .number_ms{
+	font-family: 'Comfortaa', cursive ,sans-serif;
+}
+
+.top {
+	position: fixed;
+	bottom: 23px;
+	right: 57px;
+	z-index: 1;
+}
+
+/* ----------header---------- */
+
+.header {
+	position: relative;	
+}
+
+.banner_pic{
+	position:absolute;
+	right: 0;
+	top: 0;	
+}
+
+.banner_pic_sm{
+	display: none;
+	position:absolute;
+	right: 0;
+	bottom: 10vh;
+}
+
+/* ------------nav------------ */
+nav {	
+	background: #F7F9FD;
+	margin-right: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	
+}
+
+nav .logo {
+	max-width: 218px;
+	width: 100%;
+	z-index: 1;
+	position: relative;
+}
+
+nav .home_button {
+	background: #ff5d50;
+	width: 128px;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 16px;
+	border-radius: 22px;
+	z-index: 1;
+	margin-right: -8px; /* 補nav右邊界 */
+}
+
+nav .home_button:hover {
+	background: #56c4c5;
+}
+
+/* ------------banner------------ */
+
+.banner {
+	height: 382px;
+	background: #F7F9FD;
+	border-radius: 0px 0px 0px 25vh;
+	border-radius: 0px 0px 0px 300px;
+	margin-right: 8px;	
+	margin-bottom: 89px;
+}
+
+.banner_t{
+	position: relative;
+	z-index: 1;
+}
+
+.banner h2 {
+	/* 你愛我像誰？ 扮演什麼角色我都會 */	
+	padding-top: 92px;
+	font-size: 48px;
+	line-height: 70px;
+	font-weight: bold;
+	
+}
+
+/* ------------main------------ */
+
+.main{
+	background: url('../image/ball03.svg') no-repeat top 36% left -267px/361px;
+	
+}
+
+
+/* -----方案選擇----- */
+
+.plan_section{
+	width: 100%;
+	margin-bottom: 100px;	
+}
+
+.plan_page{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 48px;
+	gap: 16px;
+}
+
+.plan_page_b{
+	display: block;
+	width: 130px;
+	height: 50px;
+	background: #fff;
+	border-radius: 27px;
+	padding: 0;
+	font-size: 18px;
+	text-align: center;
+	line-height: 48px;
+	color: #56c4c5;
+	border: 1px solid #56c4c5;
+}
+
+.plan_page_a_c,.plan_page_b:hover{
+	background: #56C4C5;
+	border: none;
+	color: #fff;
+}
+
+.plan_intro_ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	row-gap: 24px;
+	column-gap: 21px;
+}
+
+.plan_intro_li{
+	box-shadow: 0px 2px 10px #00000014;
+	border-radius: 12px;
+	background: #fff;	
+}
+
+.plan_intro_li h4{
+	padding:16px 0;
+	border-bottom:1px solid #DDDDDD; 
+}
+
+.plan_detail{
+	padding-left: 29px;
+	padding-right: 29px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.plan_p{
+	text-align: center;
+}
+
+/* -----費用區塊----- */
+
+.price{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* 費用框框 */
+.price_np,.price_pm{	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: #F5F5F5;
+	border-radius: 12px;
+	text-align: center;
+	width: 169px;
+	height: 108px;
+}
+
+/* 人數顏色 */
+.price_np > .price_np_n{
+	color: #56C4C5;
+}
+
+/* 費用小標 */
+.price_np_t{
+	font-size: 12px;
+	line-height: 17px;
+	padding-bottom: 8px;
+}
+
+/* 人數&金額 */
+.price_np_n{
+	font-size: 32px;
+	line-height: 35px;
+	text-align: right;
+	padding-right: 20px;
+}
+
+/* 單位 */
+.unit{
+	padding-left: 8px;
+	font-size: 12px;
+	font-weight: 600;
+	vertical-align: middle;
+}
+
+.equal{
+	font-size: 29px;
+	padding:0 19px;
+}
+
+/* ---條列式特點--- */
+
+.feature{
+	list-style-image: url('../image/icon_check.svg');
+	list-style-position: inside;
+	width: 100%;	
+}
+
+.feature li{
+	padding: 8px 0;
+} 
+
+.button {
+	display: block;
+	text-decoration: none;
+	background: #56c4c5;
+	color: #fff;
+	border-radius: 27px;
+	width: 136px;
+	line-height: 49px;
+	text-align: center;
+	font-size: 18px;	
+}
+
+.button:hover {
+	background: #ff5d50;
+}
+
+/* -----常見問題----- */
+
+.QA_section{
+	margin-bottom: 100px;
+}
+
+.QA_ul {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.QA_li{
+	background: #FFFFFF;
+	box-shadow: 0px 2px 10px #00000014;
+	border-radius: 12px;
+	padding: 0 32px;	
+}
+
+.question{
+	padding: 16px 0px;
+	text-decoration: none;
+	color: #221E1F;
+	display: flex;
+	justify-content: space-between;
+}
+
+.question:hover{
+	color: #56C4C5;
+}
+
+.question_color{
+	color: #56C4C5;
+	font-weight: 600;
+}
+
+.minus{
+	display: none;
+}
+
+.red{
+	color: red;
+}
+
+.answer{
+	display: none;
+	line-height: 32px;
+	padding-top: 8px;
+	padding-bottom: 24px;
+	color: #747474;
+}
+
+
+
+
+/* ------------版權------------ */
+
+.copyright {
+	background: #f5f5f5;
+	text-align: center;
+	line-height: 56px;
+}
+
+
+
+
+/* -----方案選擇----- */
+
+@media (max-width:768px) {
+	
+	.pa-lr {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	nav{
+		position: relative;
+		border-bottom:2px solid #FFD153;
+		background: #FFF;
+		margin-right: 0;
+	}
+	
+	.banner{
+		margin-right: 0;
+	}
+	
+	.banner h2 {
+		padding-top: 48px;
+	}
+	
+	.plan_page{
+		justify-content: start;
+		overflow: scroll;
+		margin-bottom: 20px;
+		padding-bottom: 12px;
+	}
+}
+
+@media (max-width:576px) {	
+	.mb32{
+		margin-bottom: 24px;
+	}
+	
+	.fz-l {
+		font-size: 28px;
+		line-height: 40px;
+		margin-bottom: 32px;
+	}
+	
+	.fz-s {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.main{
+		background: url('../image/ball03.svg') no-repeat top 47% left -108px/204px;
+	}
+	
+	/* -----方案選擇----- */
+	
+	.plan_section{
+		margin-bottom: 60px;
+	}
+	
+	.plan_section h3{
+		margin-bottom: 24px;
+	}
+	
+	.plan_page{
+		gap: 6px;
+	}
+	
+	.plan_page a {
+		display: block;
+		width: 90px;
+		height: 40px;
+		line-height: 40px;
+	}
+	
+	.plan_intro_ul{
+		gap: 24px;
+	}
+	
+	.price_np_n {
+		font-size: 28px;
+		line-height: 32px;
+		padding-right: 11px;
+	}
+
+	
+	.price_np,.price_pm{
+		width: 139px;
+		height: 89px;
+	}
+	
+	.equal {
+		font-size: 24px;
+		padding: 0 6px;
+	}
+	
+	.feature{
+		font-size: 14px;
+		line-height: 20px;
+	}
+	
+	.QA_li {
+		padding: 0 24px;
+	}
+	
+	.answer{
+		padding-top: 0px;
+	}
+	
+	
+}
+@media (max-width:375px) {
+	.pa-lr{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.top {
+		width: 50px;
+		bottom: 16px;
+		right: 16px;
+	}
+	
+	
+	nav {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+	
+	nav .logo {
+		max-width: 130px;
+	}
+	
+	.banner_pic{
+		display: none;
+	}
+	
+	.banner{
+		height: 495px;
+		background: #F7F9FD url('../image/banner_sm.svg') no-repeat top left;
+		border-radius: 0px 0px 0px 150px;
+		margin-bottom: 60px;
+	}
+	
+	.banner h2 {
+		font-size: 32px;
+		line-height: 46px;
+	}
+
+
+	.plan_detail {
+		padding-left: 16px;
+		padding-right: 16px;		
+	}
+	
+	.QA_li{
+		padding: 0 16px;	
+	}
+	
+}
