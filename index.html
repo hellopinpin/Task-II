@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChatTalker 最全面的聊天機器人</title>
-    <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" href="./image/icon.ico">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans+TC&family=Zen+Antique&display=swap" rel="stylesheet">
-    <script src="jquery-3.6.0.min.js"></script>
-    <script src="all.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans+TC&family=Zen+Antique&display=swap" rel="stylesheet"> <!-- swiper輪播 -->
     
 </head>
 <body>
@@ -31,7 +30,7 @@
             </div>
             <img src="./image/home.svg" alt="background_man">
         </div>
-
+        
     </div>
     
     <div class="container">
@@ -122,10 +121,10 @@
             </ul>
         </div>
         
-        <div class="review mb-s">
+        <div class="review mb-s swiper" id="comment-swiper">
             <h3 class="fz-l">好評如潮</h3>
-            <ul class="review_ul">
-                <li class="br-li">
+            <ul class="review_ul swiper-wrapper">
+                <li class="br-li swiper-slide">
                     <img src="./image/user01.jpg" alt="user01" class="user_pic">
                     <p class="review_p">原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。</p>
                     <hr>
@@ -141,7 +140,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="br-li">
+                <li class="br-li swiper-slide">
                     <img src="./image/user02.jpg" alt="user02" class="user_pic">
                     <p class="review_p">團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！</p>
                     <hr>
@@ -157,7 +156,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="br-li">
+                <li class="br-li swiper-slide">
                     <img src="./image/user03.jpg" alt="user03" class="user_pic">
                     <p class="review_p">經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～</p>
                     <hr>
@@ -173,7 +172,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="br-li">
+                <li class="br-li swiper-slide">
                     <img src="./image/user01.jpg" alt="user01" class="user_pic">
                     <p class="review_p">原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。</p>
                     <hr>
@@ -188,46 +187,15 @@
                             <img src="./image/icon_star.svg" alt="star">
                         </div>
                     </div>
-                </li>
-                <li class="br-li">
-                    <img src="./image/user02.jpg" alt="user02" class="user_pic">
-                    <p class="review_p">團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！</p>
-                    <hr>
-                    <p class="user_unit">subwhat 行銷公司</p>
-                    <div class="user_b">
-                        <p class="user">Zoe 活動長</p>
-                        <div class="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                        </div>
-                    </div>
-                </li>
-                <li class="br-li">
-                    <img src="./image/user03.jpg" alt="user03" class="user_pic">
-                    <p class="review_p">經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～</p>
-                    <hr>
-                    <p class="user_unit">油土伯</p>
-                    <div class="user_b">
-                        <p class="user">HowBig</p>
-                        <div class="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                        </div>
-                    </div>
-                </li>
+                </li>                
             </ul>
-            <ul class="review_page">
+            <div class="swiper-pagination"></div><!-- swiper 套件的分頁圓點 -->
+            <!-- <ul class="review_page">
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
-            </ul>
+            </ul> -->
         </div>
         
     </div>
@@ -238,5 +206,10 @@
     </div>
     
     <div class="copyright">© 2022 chatTalker. All Rights Reserved.</div>
+    
+    <script src="jquery-3.6.0.min.js"></script>    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="all.js"></script>
 </body>
 </html>
