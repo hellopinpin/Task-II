@@ -48,7 +48,6 @@ table {
 }
 
 /*-----------------------------*/
-/* font-family: 'Noto Sans TC', sans-serif;  */
 
 * {
 	margin: 0 auto;
@@ -74,6 +73,14 @@ img {
 
 .pa-s{
 	padding:0 10%;
+}
+
+@media (min-width:1366px) {	
+	.ma-s{
+		max-width: 1088px;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
 
 .mb-s {
@@ -284,16 +291,18 @@ nav .plan_price:hover {
 
 .feature {
 	width: 100%;
+	background:url("../image/ball02.svg") no-repeat top -217px right -100px/310px;
+	/* 右邊的球 */
+}
+
+.feature_s {	
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-between;
-	/* justify-content: start; */
 	align-content: center;
 	text-align: left;
 	column-gap: 16px;
 	row-gap: 24px;	
-	background:url("../image/ball02.svg") no-repeat top -217px right -100px/310px;
-	/* 右邊的球 */
 }
 
 .feature_t {
@@ -472,7 +481,7 @@ nav .plan_price:hover {
 
 @media (max-width: 1080px) {
 	
-	.feature{
+	.feature_s{
 		flex-wrap: wrap;
 	}
 	
@@ -577,7 +586,7 @@ nav .plan_price:hover {
 		bottom: 16px;
 		right: 16px;
 	}
-		
+	
 	/* ----media---- */
 	.media,	.media li {
 		width: 100%;
@@ -620,7 +629,7 @@ nav .plan_price:hover {
 	}	
 	
 	/* ----review---- */
-
+	
 	.review{ /* 左下的球 */
 		background: url("../image/ball03.svg") no-repeat top 40px left -76px/153px;
 	}
@@ -630,7 +639,7 @@ nav .plan_price:hover {
 		padding-right: 16px;
 		padding-bottom: 16px;
 	}
-
+	
 	/* ----footer---- */
 	.footer {
 		height: 461px;
@@ -653,7 +662,7 @@ nav .plan_price:hover {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-
+	
 	nav .logo {
 		max-width: 130px;
 	}

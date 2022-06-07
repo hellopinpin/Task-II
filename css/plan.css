@@ -48,7 +48,6 @@ table {
 }
 
 /*-----------------------------*/
-/* font-family: 'Noto Sans TC', sans-serif;  */
 
 *,*::before,*::after{
 	margin: 0 auto;
@@ -67,6 +66,10 @@ body {
 .pa-lr{
 	padding-left: 10%;
 	padding-right: 10%;
+}
+
+.mb-s{
+	margin-bottom: 100px;
 }
 
 .mb32{
@@ -89,8 +92,7 @@ img {
 	font-size: 24px;
 	line-height: 35px;
 	font-weight: 600;
-	text-align: center;
-	
+	text-align: center;	
 }
 
 .fz-s {
@@ -172,7 +174,6 @@ nav .home_button:hover {
 	border-radius: 0px 0px 0px 25vh;
 	border-radius: 0px 0px 0px 300px;
 	margin-right: 8px;	
-	margin-bottom: 89px;
 }
 
 .banner_t{
@@ -181,12 +182,11 @@ nav .home_button:hover {
 }
 
 .banner h2 {
-	/* 你愛我像誰？ 扮演什麼角色我都會 */	
 	padding-top: 92px;
 	font-size: 48px;
 	line-height: 70px;
 	font-weight: bold;
-	
+	padding-bottom: 16px;	
 }
 
 /* ------------container------------ */
@@ -195,12 +195,10 @@ nav .home_button:hover {
 	background: url('../image/ball03.svg') no-repeat top 36% left -267px/361px;	
 }
 
-
 /* -----方案選擇----- */
 
 .plan_section{
 	width: 100%;
-	margin-bottom: 100px;	
 }
 
 .plan_page{
@@ -344,10 +342,6 @@ nav .home_button:hover {
 
 /* -----常見問題----- */
 
-.QA_section{
-	margin-bottom: 100px;
-}
-
 .QA_ul {
 	display: flex;
 	flex-direction: column;
@@ -394,9 +388,6 @@ nav .home_button:hover {
 	color: #747474;
 }
 
-
-
-
 /* ------------版權------------ */
 
 .copyright {
@@ -404,11 +395,6 @@ nav .home_button:hover {
 	text-align: center;
 	line-height: 56px;
 }
-
-
-
-
-/* -----方案選擇----- */
 
 @media (max-width:768px) {
 	
@@ -447,6 +433,10 @@ nav .home_button:hover {
 }
 
 @media (max-width:576px) {	
+	.mb-s{
+		margin-bottom: 60px;
+	}
+
 	.mb32{
 		margin-bottom: 24px;
 	}
@@ -477,11 +467,7 @@ nav .home_button:hover {
 	}
 	
 	/* -----方案選擇----- */
-	
-	.plan_section{
-		margin-bottom: 60px;
-	}
-	
+		
 	.plan_section h3{
 		margin-bottom: 24px;
 	}
@@ -531,7 +517,6 @@ nav .home_button:hover {
 		padding-top: 0px;
 	}
 	
-	
 }
 @media (max-width:375px) {
 	.pa-lr{
@@ -547,7 +532,6 @@ nav .home_button:hover {
 		height: 495px;
 		background: #F7F9FD url('../image/banner_sm.svg') no-repeat top left;
 		border-radius: 0px 0px 0px 150px;
-		margin-bottom: 60px;
 	}
 	
 	.banner h2 {
