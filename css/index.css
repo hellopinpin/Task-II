@@ -72,13 +72,16 @@ img {
 	vertical-align: middle;
 }
 
-.mb-s {
-	/* for section */
-	margin-top: 50px;
-	margin-bottom: 50px;
+.pa-s{
+	padding:0 10%;
 }
 
-.m-ul {	
+.mb-s {
+	/* for section */
+	margin-bottom: 100px;
+}
+
+.m-ul {
 	margin-top: 48px;
 	column-gap: 16px;
 	row-gap: 24px;
@@ -200,16 +203,8 @@ nav .plan_price:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-image: url("../image/ball01.svg"),
-	/* 左上的球 */
-	url("../image/ball02.svg"),
-	/* 右邊的球 */
-	url("../image/ball03.svg"); /* 左下的球 */
-	background-repeat: no-repeat;
-	background-position: top -180px left -222px, top 925px right -100px,
-	top 1871px left 50px;
-	background-size: 360px, 310px, 150px;
-	padding:0 10%;
+
+	/* padding:0 10%; */
 }
 
 /* ------------社交平台------------ */
@@ -287,10 +282,12 @@ nav .plan_price:hover {
 	width: 100%;
 	display: flex;
 	flex-direction: row-reverse;
-	/* justify-content: space-between; */
-	justify-content: start;
+	justify-content: space-between;
+	/* justify-content: start; */
 	align-content: center;
-	text-align: left;	
+	text-align: left;
+	column-gap: 16px;
+	row-gap: 24px;
 }
 
 .feature_t {
@@ -298,6 +295,7 @@ nav .plan_price:hover {
 	flex-direction: column;
 	justify-content: center;
 	width: 38%;
+	flex-shrink: 0;
 }
 
 .feature_t .plan_price {
@@ -307,17 +305,18 @@ nav .plan_price:hover {
 .feature_ul {
 	display: flex;
 	flex-wrap: wrap;
-	/* justify-content: center; */
-	width: calc(100% - 38% - 8px);
+	justify-content: start;
+	/* width: 62%; */
 	margin-top: 0;
 	column-gap: 47px;
-    row-gap: 28px;
+	row-gap: 28px;
 }
 
 .feature_ul li {
 	padding: 32px;
 	padding-bottom: 48px;
 	width: 230px;
+	/* max-width: 50%; */
 	box-sizing: border-box;
 }
 
@@ -344,25 +343,10 @@ nav .plan_price:hover {
 
 /* ------------好評如潮------------ */
 
-/* 將Swiper套件主色改為黃色 */
-:root {
-	--swiper-theme-color: #ffd153;
-}
-
-/* 將底部 pagination 分頁的 active 狀態改為想要的樣式 */
-.swiper-pagination-bullet-active {
-	width: 20px;
-	border-radius: 8px;
-  }
-  
-  /* 讓分頁圓點移至下方 */
-  .swiper-pagination {
-	position: static;
-	margin-top: 24px;
-  }
 
 .review {
 	width: 100%;
+	background: url("../image/ball03.svg") no-repeat; /* 左下的球 */
 } 
 
 .review h3 {
@@ -370,12 +354,34 @@ nav .plan_price:hover {
 	margin-bottom: 48px;
 }
 
+/* 將Swiper套件主色改為黃色 */
+:root {
+	--swiper-theme-color: #ffd153;
+}
+
+/* 將底部 pagination 分頁的 active 狀態改為想要的樣式 */
+.swiper-pagination-bullet {
+	width: 10px;
+	height:10px;	
+	}
+
+.swiper-pagination-bullet-active {
+	width: 16px;
+	border-radius: 8px;
+	}
+  
+  /* 讓分頁圓點移至下方 */
+  .swiper-pagination {
+	position: static;
+	margin-top: 24px;
+	line-height: 10px;
+	}
+
+
 .review_ul li {
 	margin-top: 56px;
-	margin-bottom: 24px;
-	/* width: 32.35%; */
 	display: flex;
-	flex-direction: column;	
+	flex-direction: column;
 	position: relative;
 	padding-top: 32px;
 	padding-left: 32px;
@@ -395,7 +401,7 @@ nav .plan_price:hover {
 	flex-grow: 1;
 }
 
-hr {
+.review hr {
 	width: 100%;
 	margin-top: 23px;
 	margin-bottom: 8px;
@@ -423,21 +429,6 @@ hr {
 	vertical-align: baseline;
 }
 
-.review_page {
-	margin: 0 auto;
-	width: 70px;
-	display: flex;
-	justify-content: center;
-}
-
-.review_page a {
-	display: block;
-	width: 10px;
-	height: 10px;
-	background: #dddddd;
-	border-radius: 50px;
-	margin: 0 4px;
-}
 
 /* ------------footer------------ */
 
@@ -473,8 +464,31 @@ hr {
 	}		
 }
 
+@media (max-width: 1080px) {
+	
+	.feature{
+		flex-wrap: wrap;
+	}
+	
+	.feature_t,	.feature_ul {
+		width: 100%;
+	}	
+	
+	.feature_t {
+		align-items: center;
+		text-align: center;
+	}
+
+	.feature_ul{
+		justify-content: center;
+		column-gap: 16px;
+		row-gap: 24px	
+	}
+	
+}
+
 @media (max-width:992px) {
-	.container{
+	.pa-s{
 		padding:0 5%;
 	}
 	
@@ -497,27 +511,13 @@ hr {
 		width: 43%;
 	}
 	
-	.feature{
-		flex-wrap: wrap;
-	}
-	
-	.feature_t,	.feature_ul {
-		width: 100%;
-	}	
-	
-	.feature_t {
-		align-items: center;
-		text-align: center;
-	}		
 }
 
 @media (max-width: 768px) {
 	.mb-s {
 		/* for section */
-		margin-top: 30px;
-		margin-bottom: 30px;
-		padding-left:5%;
-		padding-right:5%;
+		margin-bottom: 60px;
+
 	}
 		
 	p {
@@ -583,7 +583,11 @@ hr {
 	
 	.container {
 		background-image: none;
-		padding:0%;
+	}
+	
+	.pa-s {
+		padding-left:5%;
+		padding-right:5%;
 	}
 	
 	/* ----media---- */
@@ -612,26 +616,15 @@ hr {
 	
 	/* ----role---- */
 	.role {
-		width: 100%;
 		background:url("../image/ball02.svg") no-repeat bottom right -47px/135px;
 		/* 右邊的球 */
 	}
 	
 	/* ----feature---- */	
-	.feature_ul {
-		justify-content: center;
-		column-gap: 16px;
-		row-gap: 24px	
-	}
 	
 	.feature_ul h4 {
 		padding-bottom: 4px;
-	}
-	/* ----review---- */
-	
-	.review,.review li {
-		width: 100%;
-	}
+	}	
 	
 	/* ----footer---- */
 	.footer {

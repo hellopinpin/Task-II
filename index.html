@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChatTalker 最全面的聊天機器人</title>
     <link rel="icon" href="./image/icon.ico">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> <!-- swiper輪播 -->
+    <link rel="stylesheet" href="./css/index.css">        
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans+TC&family=Zen+Antique&display=swap" rel="stylesheet"> <!-- swiper輪播 -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans+TC&family=Zen+Antique&display=swap" rel="stylesheet"> 
     
 </head>
 <body>
@@ -35,7 +35,7 @@
     
     <div class="container">
         
-        <div class="media mb-s">
+        <div class="media pa-s mb-s">
             <h3 class="fz-l">三大平台，我來搞定</h3>
             <ul class="m-ul">
                 <li class="m-li">
@@ -56,7 +56,7 @@
             </ul>
         </div>
         
-        <div class="role mb-s">
+        <div class="role pa-s mb-s">
             <h3 class="fz-l">任何的角色，我都能給</h3>
             <p class="fz-m">量身打造您想要的專屬服務，幫助您迅速判斷成效、並加快決策</p>
             <ul class="m-ul">
@@ -83,13 +83,13 @@
             </ul>
         </div>
         
-        <div class="feature mb-s">
+        <div class="feature pa-s mb-s">
             <div class="feature_t">
                 <h3 class="fz-l">快速了解客戶輪廓<br>建立品牌流量池</h3>
                 <p class="fz-s">深入用戶日常，成為用戶貼身好友<br>精準傳遞品牌資訊，打造個人化專屬服務<br>不知不覺深入用戶生活，成為用戶貼心的好朋朋:D</p>
                 <a href="./plan.html" class="plan_price">方案費用</a>
             </div>
-            <ul class="feature_ul m-ul">
+            <ul class="feature_ul">
                 <li class="m-li br-li">
                     <div class="feature_pic">
                         <img src="./image/icon01.svg" alt="feature01">
@@ -120,96 +120,124 @@
                 </li>
             </ul>
         </div>
-        
-        <div class="review mb-s swiper" id="comment-swiper">
-            <h3 class="fz-l">好評如潮</h3>
-            <ul class="review_ul swiper-wrapper">
-                <li class="br-li swiper-slide">
-                    <img src="./image/user01.jpg" alt="user01" class="user_pic">
-                    <p class="review_p">原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。</p>
-                    <hr>
-                    <p class="user_unit">清心寡慾設計公司</p>
-                    <div class="user_b">
-                        <p class="user">Lina 執行長</p>
-                        <div class="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
+        <div class="review pa-s mb-s">
+            <h3 class="fz-l">好評如潮</h3>      
+                  
+            <div id="comment-swiper" class="review_s swiper">            
+                <ul class="review_ul swiper-wrapper">
+                    <li class="br-li swiper-slide">
+                        <img src="./image/user01.jpg" alt="user01" class="user_pic">
+                        <p class="review_p">原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。</p>
+                        <hr>
+                        <p class="user_unit">清心寡慾設計公司</p>
+                        <div class="user_b">
+                            <p class="user">Lina 執行長</p>
+                            <div class="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="br-li swiper-slide">
-                    <img src="./image/user02.jpg" alt="user02" class="user_pic">
-                    <p class="review_p">團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！</p>
-                    <hr>
-                    <p class="user_unit">subwhat 行銷公司</p>
-                    <div class="user_b">
-                        <p class="user">Zoe 活動長</p>
-                        <div class="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
+                    </li>
+                    <li class="br-li swiper-slide">
+                        <img src="./image/user02.jpg" alt="user02" class="user_pic">
+                        <p class="review_p">團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！</p>
+                        <hr>
+                        <p class="user_unit">subwhat 行銷公司</p>
+                        <div class="user_b">
+                            <p class="user">Zoe 活動長</p>
+                            <div class="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="br-li swiper-slide">
-                    <img src="./image/user03.jpg" alt="user03" class="user_pic">
-                    <p class="review_p">經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～</p>
-                    <hr>
-                    <p class="user_unit">油土伯</p>
-                    <div class="user_b">
-                        <p class="user">HowBig</p>
-                        <div class="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
+                    </li>
+                    <li class="br-li swiper-slide">
+                        <img src="./image/user03.jpg" alt="user03" class="user_pic">
+                        <p class="review_p">經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～</p>
+                        <hr>
+                        <p class="user_unit">油土伯</p>
+                        <div class="user_b">
+                            <p class="user">HowBig</p>
+                            <div class="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="br-li swiper-slide">
-                    <img src="./image/user01.jpg" alt="user01" class="user_pic">
-                    <p class="review_p">原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。</p>
-                    <hr>
-                    <p class="user_unit">清心寡慾設計公司</p>
-                    <div class="user_b">
-                        <p class="user">Lina 執行長</p>
-                        <div class="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
-                            <img src="./image/icon_star.svg" alt="star">
+                    </li>
+                    <li class="br-li swiper-slide">
+                        <img src="./image/user01.jpg" alt="user01" class="user_pic">
+                        <p class="review_p">原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。</p>
+                        <hr>
+                        <p class="user_unit">清心寡慾設計公司</p>
+                        <div class="user_b">
+                            <p class="user">Lina 執行長</p>
+                            <div class="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                            </div>
                         </div>
-                    </div>
-                </li>                
-            </ul>
-            <div class="swiper-pagination"></div><!-- swiper 套件的分頁圓點 -->
-            <!-- <ul class="review_page">
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul> -->
+                    </li>    
+                    <li class="br-li swiper-slide">
+                        <img src="./image/user02.jpg" alt="user02" class="user_pic">
+                        <p class="review_p">團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！</p>
+                        <hr>
+                        <p class="user_unit">subwhat 行銷公司</p>
+                        <div class="user_b">
+                            <p class="user">Zoe 活動長</p>
+                            <div class="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="br-li swiper-slide">
+                        <img src="./image/user03.jpg" alt="user03" class="user_pic">
+                        <p class="review_p">經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～</p>
+                        <hr>
+                        <p class="user_unit">油土伯</p>
+                        <div class="user_b">
+                            <p class="user">HowBig</p>
+                            <div class="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                                <img src="./image/icon_star.svg" alt="star">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div><!-- swiper 套件的分頁圓點 -->            
+                
+            </div>
+            
         </div>
         
-    </div>
-    
-    <div class="footer">   
-        <h3 class="fz-l">\ 美好用戶體驗，從對話開始 /</h3>
-        <a href="./plan.html" class="plan_price">方案費用</a>
-    </div>
-    
-    <div class="copyright">© 2022 chatTalker. All Rights Reserved.</div>
-    
-    <script src="jquery-3.6.0.min.js"></script>    
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="all.js"></script>
-</body>
-</html>
+        <div class="footer">   
+            <h3 class="fz-l">\ 美好用戶體驗，從對話開始 /</h3>
+            <a href="./plan.html" class="plan_price">方案費用</a>
+        </div>
+        
+        <div class="copyright">© 2022 chatTalker. All Rights Reserved.</div>
+        
+        <script src="jquery-3.6.0.min.js"></script>    
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="all.js"></script>
+    </body>
+    </html>
