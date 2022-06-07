@@ -193,7 +193,7 @@ nav .plan_price:hover {
 	position: fixed;
 	bottom: 23px;
 	right: 48px;
-	z-index: 1;
+	z-index: 2;
 }
 
 /* ------------內容------------ */
@@ -203,7 +203,7 @@ nav .plan_price:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
+	
 	/* padding:0 10%; */
 }
 
@@ -212,6 +212,7 @@ nav .plan_price:hover {
 .media {
 	width: 100%;
 	text-align: center;
+	background: url('../image/ball01.svg') no-repeat top -180px left -222px/360px;
 }
 
 .media ul {
@@ -247,6 +248,9 @@ nav .plan_price:hover {
 .role {
 	text-align: center;
 	width: 100%;
+	padding-bottom: 100px;
+	background:url("../image/ball02.svg") no-repeat bottom -93px right -100px/310px;
+	/* 右邊的球 */
 }
 
 .role ul {
@@ -287,7 +291,9 @@ nav .plan_price:hover {
 	align-content: center;
 	text-align: left;
 	column-gap: 16px;
-	row-gap: 24px;
+	row-gap: 24px;	
+	background:url("../image/ball02.svg") no-repeat top -217px right -100px/310px;
+	/* 右邊的球 */
 }
 
 .feature_t {
@@ -346,7 +352,7 @@ nav .plan_price:hover {
 
 .review {
 	width: 100%;
-	background: url("../image/ball03.svg") no-repeat; /* 左下的球 */
+	background: url("../image/ball03.svg") no-repeat top 46px left 50px/150px; /* 左下的球 */
 } 
 
 .review h3 {
@@ -363,19 +369,19 @@ nav .plan_price:hover {
 .swiper-pagination-bullet {
 	width: 10px;
 	height:10px;	
-	}
+}
 
 .swiper-pagination-bullet-active {
 	width: 16px;
 	border-radius: 8px;
-	}
-  
-  /* 讓分頁圓點移至下方 */
-  .swiper-pagination {
+}
+
+/* 讓分頁圓點移至下方 */
+.swiper-pagination {
 	position: static;
 	margin-top: 24px;
 	line-height: 10px;
-	}
+}
 
 
 .review_ul li {
@@ -478,7 +484,7 @@ nav .plan_price:hover {
 		align-items: center;
 		text-align: center;
 	}
-
+	
 	.feature_ul{
 		justify-content: center;
 		column-gap: 16px;
@@ -489,7 +495,7 @@ nav .plan_price:hover {
 
 @media (max-width:992px) {
 	.pa-s{
-		padding:0 5%;
+		padding: 0 40px;
 	}
 	
 	.m-ul {
@@ -517,11 +523,7 @@ nav .plan_price:hover {
 	.mb-s {
 		/* for section */
 		margin-bottom: 60px;
-
-	}
 		
-	p {
-		padding-top: 16px;
 	}
 	
 	.fz-l {
@@ -552,9 +554,6 @@ nav .plan_price:hover {
 		padding: 16px 20px;
 	}
 	
-	nav .logo {
-		max-width: 130px;
-	}
 	
 	.banner {			
 		width: 100%;
@@ -578,18 +577,7 @@ nav .plan_price:hover {
 		bottom: 16px;
 		right: 16px;
 	}
-	
-	/* ----------container------------ */
-	
-	.container {
-		background-image: none;
-	}
-	
-	.pa-s {
-		padding-left:5%;
-		padding-right:5%;
-	}
-	
+		
 	/* ----media---- */
 	.media,	.media li {
 		width: 100%;
@@ -616,16 +604,33 @@ nav .plan_price:hover {
 	
 	/* ----role---- */
 	.role {
-		background:url("../image/ball02.svg") no-repeat bottom right -47px/135px;
+		padding-bottom: 60px;
+		background:url("../image/ball02.svg") no-repeat bottom 28px right -47px/135px;
 		/* 右邊的球 */
 	}
 	
 	/* ----feature---- */	
 	
+	.feature {
+		background: none;
+	}
+	
 	.feature_ul h4 {
 		padding-bottom: 4px;
 	}	
 	
+	/* ----review---- */
+
+	.review{ /* 左下的球 */
+		background: url("../image/ball03.svg") no-repeat top 40px left -76px/153px;
+	}
+	
+	.review_ul li {
+		padding-left: 16px;
+		padding-right: 16px;
+		padding-bottom: 16px;
+	}
+
 	/* ----footer---- */
 	.footer {
 		height: 461px;
@@ -641,8 +646,15 @@ nav .plan_price:hover {
 	.footer a{
 		margin-bottom: 60px;
 	}
-	
-	.review{ /* 左下的球 */
-		background: url("../image/ball03.svg") no-repeat top 40px left -76px/153px;
+}
+
+@media (max-width: 375px) {
+	.pa-s{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	nav .logo {
+		max-width: 130px;
 	}
 }

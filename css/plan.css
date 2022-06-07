@@ -69,8 +69,6 @@ body {
 	padding-right: 10%;
 }
 
-.pa-lr
-
 .mb32{
 	margin-bottom: 32px;
 }
@@ -191,11 +189,10 @@ nav .home_button:hover {
 	
 }
 
-/* ------------main------------ */
+/* ------------container------------ */
 
-.main{
-	background: url('../image/ball03.svg') no-repeat top 36% left -267px/361px;
-	
+.container{
+	background: url('../image/ball03.svg') no-repeat top 36% left -267px/361px;	
 }
 
 
@@ -427,6 +424,12 @@ nav .home_button:hover {
 		margin-right: 0;
 	}
 	
+	.top {
+		width: 50px;
+		bottom: 16px;
+		right: 16px;
+	}
+
 	.banner{
 		margin-right: 0;
 	}
@@ -438,8 +441,8 @@ nav .home_button:hover {
 	.plan_page{
 		justify-content: start;
 		overflow: scroll;
-		margin-bottom: 20px;
-		padding-bottom: 12px;
+		margin-bottom: 14px;
+		padding-bottom: 18px;
 	}
 }
 
@@ -459,7 +462,17 @@ nav .home_button:hover {
 		line-height: 24px;
 	}
 
-	.main{
+	nav {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+	
+	nav .logo {
+		max-width: 130px;
+	}
+
+
+	.container{
 		background: url('../image/ball03.svg') no-repeat top 47% left -108px/204px;
 	}
 	
@@ -526,22 +539,6 @@ nav .home_button:hover {
 		padding-right: 20px;
 	}
 
-	.top {
-		width: 50px;
-		bottom: 16px;
-		right: 16px;
-	}
-	
-	
-	nav {
-		padding-top: 16px;
-		padding-bottom: 16px;
-	}
-	
-	nav .logo {
-		max-width: 130px;
-	}
-	
 	.banner_pic{
 		display: none;
 	}
