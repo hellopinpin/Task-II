@@ -72,7 +72,8 @@ img {
 }
 
 .pa-s{
-	padding:0 10%;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 @media (min-width:1366px) {	
@@ -504,7 +505,8 @@ nav .plan_price:hover {
 
 @media (max-width:992px) {
 	.pa-s{
-		padding: 0 40px;
+		padding-right: 40px;
+		padding-left: 40px;
 	}
 	
 	.m-ul {
@@ -560,7 +562,6 @@ nav .plan_price:hover {
 	nav {
 		margin: 0 auto;
 		border-bottom: 2px solid #ffd153;
-		padding: 16px 20px;
 	}
 	
 	
@@ -657,13 +658,21 @@ nav .plan_price:hover {
 	}
 }
 
+@media (max-width:576px) {
+	nav{
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}	
+	
+	nav .logo {
+		max-width: 130px;
+	}
+}
+
 @media (max-width: 375px) {
 	.pa-s{
 		padding-left: 20px;
 		padding-right: 20px;
 	}
 	
-	nav .logo {
-		max-width: 130px;
-	}
 }

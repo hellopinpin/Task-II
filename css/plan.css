@@ -149,7 +149,7 @@ nav .logo {
 	position: relative;
 }
 
-nav .home_button {
+.home_button {
 	background: #ff5d50;
 	width: 128px;
 	text-decoration: none;
@@ -162,7 +162,7 @@ nav .home_button {
 	margin-right: -8px; /* 補nav右邊界 */
 }
 
-nav .home_button:hover {
+.home_button:hover {
 	background: #56c4c5;
 }
 
@@ -408,6 +408,10 @@ nav .home_button:hover {
 		border-bottom:2px solid #FFD153;
 		background: #FFF;
 		margin-right: 0;
+	}
+
+	.home_button{
+		margin-right: 0px;
 	}
 	
 	.top {
