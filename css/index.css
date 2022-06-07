@@ -76,13 +76,7 @@ img {
 	padding-right: 10%;
 }
 
-@media (min-width:1366px) {	
-	.ma-s{
-		max-width: 1088px;
-		margin-right: auto;
-		margin-left: auto;
-	}
-}
+
 
 .mb-s {
 	/* for section */
@@ -474,6 +468,19 @@ nav .plan_price:hover {
 	line-height: 56px;
 }
 
+
+@media (min-width:1366px) {	
+	.ma-s{
+		max-width: 1088px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.footer a {
+		margin-bottom: 60px;
+	}
+}
+
 @media (max-width: 1280px) {
 	.banner {
 		width: 85%;
@@ -663,7 +670,7 @@ nav .plan_price:hover {
 		padding-top: 16px;
 		padding-bottom: 16px;
 	}	
-	
+
 	nav .logo {
 		max-width: 130px;
 	}
