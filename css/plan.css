@@ -248,8 +248,8 @@ nav .logo {
 }
 
 .plan_detail{
-	padding-left: 29px;
-	padding-right: 29px;
+	padding-left: 24px;
+	padding-right: 24px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -262,6 +262,7 @@ nav .logo {
 /* -----費用區塊----- */
 
 .price{
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -275,7 +276,7 @@ nav .logo {
 	background: #F5F5F5;
 	border-radius: 12px;
 	text-align: center;
-	width: 169px;
+	width: 45%;
 	height: 108px;
 }
 
@@ -296,12 +297,12 @@ nav .logo {
 	font-size: 32px;
 	line-height: 35px;
 	text-align: right;
-	padding-right: 20px;
 }
 
 /* 單位 */
 .unit{
-	padding-left: 8px;
+	padding-left: 6px;
+	padding-right: 6px;
 	font-size: 12px;
 	font-weight: 600;
 	vertical-align: middle;
@@ -309,14 +310,13 @@ nav .logo {
 
 .equal{
 	font-size: 29px;
-	padding:0 19px;
 }
 
 /* ---條列式特點--- */
 
 .feature{
 	list-style-image: url('../image/icon_check.svg');
-	list-style-position: inside;
+	padding-left: 2em;
 	width: 100%;	
 }
 
@@ -445,6 +445,11 @@ nav .logo {
 		margin-bottom: 24px;
 	}
 	
+	.pa-lr{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
 	.fz-l {
 		font-size: 28px;
 		line-height: 40px;
@@ -491,21 +496,23 @@ nav .logo {
 		gap: 24px;
 	}
 	
+	.plan_detail {
+		padding-left: 16px;
+		padding-right: 16px;		
+	}
+
 	.price_np_n {
 		font-size: 28px;
 		line-height: 32px;
-		padding-right: 11px;
 	}
 
 	
 	.price_np,.price_pm{
-		width: 139px;
 		height: 89px;
 	}
 	
 	.equal {
 		font-size: 24px;
-		padding: 0 6px;
 	}
 	
 	.feature{
@@ -523,10 +530,6 @@ nav .logo {
 	
 }
 @media (max-width:375px) {
-	.pa-lr{
-		padding-left: 20px;
-		padding-right: 20px;
-	}
 
 	.banner_pic{
 		display: none;
@@ -541,12 +544,6 @@ nav .logo {
 	.banner h2 {
 		font-size: 32px;
 		line-height: 46px;
-	}
-
-
-	.plan_detail {
-		padding-left: 16px;
-		padding-right: 16px;		
 	}
 	
 	.QA_li{
